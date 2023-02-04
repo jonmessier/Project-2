@@ -18,3 +18,25 @@ A dataset created from a higher education institution (acquired from several dis
 - Citation Requests/Acknowledgements: If you use this dataset in experiments for a scientific publication, please kindly cite our paper: M.V.Martins, D. Tolledo, J. Machado, L. M.T. Baptista, V.Realinho. (2021) "Early prediction of student’s performance in higher education: a case study" Trends and Applications in Information Systems and Technologies, vol.1, in Advances in Intelligent Systems and Computing series. Springer. DOI: 10.1007/978-3-030-72657-7_16
 
 - License: This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license. This allows for the sharing and adaptation of the datasets for any purpose, provided that the appropriate credit is given.
+
+---
+#Data Dictionary
+Please see the [Data Dictionary](https://archive-beta.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)
+
+##Columns dropped
+Through Exploratory visual analysis the following columns were deemed incomplete or insignificant in modeling the dropout rate.  
+- `Marital status`
+- `Previous qualification`
+- `Nacionality`
+- `Curricular units 1st sem (credited)`
+- `Curricular units 1st sem (without evaluations)`
+- `Curricular units 2nd sem (credited)`
+- `Curricular units 2nd sem (without evaluations)`
+
+##Target Variable 
+`Target` - The target variable shows students graduating (60.1%) while the minority dropped out (39%).  The data imbalance was addressed using over-\under-\SMOTE for each of the models used.  The choice varied for each model
+---
+#Visualizations
+##Heatmap
+Using a heatmap I determined which features had the strongest correlation to the target variable.
+![png](https://drive.google.com/uc?id=19dnZ9T6yEh1O9Z5NWU8RiGgYQFrIJ3lk)
