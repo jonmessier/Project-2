@@ -20,10 +20,11 @@ A dataset created from a higher education institution (acquired from several dis
 - License: This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license. This allows for the sharing and adaptation of the datasets for any purpose, provided that the appropriate credit is given.
 
 ---
-#Data Dictionary
+# Data Dictionary
 Please see the [Data Dictionary](https://archive-beta.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)
 
-##Columns dropped
+## Columns dropped
+
 Through Exploratory visual analysis the following columns were deemed incomplete or insignificant in modeling the dropout rate.  
 - `Marital status`
 - `Previous qualification`
@@ -33,10 +34,34 @@ Through Exploratory visual analysis the following columns were deemed incomplete
 - `Curricular units 2nd sem (credited)`
 - `Curricular units 2nd sem (without evaluations)`
 
-##Target Variable 
-`Target` - The target variable shows students graduating (60.1%) while the minority dropped out (39%).  The data imbalance was addressed using over-\under-\SMOTE for each of the models used.  The choice varied for each model
+## Target Variable 
+- `Target` - The target variable shows students graduating (60.1%) while the minority dropped out (39%).  The data imbalance was addressed using over-\under-\SMOTE for each of the models used.  The choice varied for each model
 ---
-#Visualizations
-##Heatmap
+# Visualizations
+## Heatmap
 Using a heatmap I determined which features had the strongest correlation to the target variable.
 ![png](https://drive.google.com/uc?id=19dnZ9T6yEh1O9Z5NWU8RiGgYQFrIJ3lk)
+
+##
+
+
+---
+# Classification models
+For each model a comparison of Accuracy, Precision, Recall, and F1 scores was complied for various implementations. These implementations included:
+1. Under-\Over-\SMOTE to balance the target variable
+2. Using Principal Component Analysis (PCA) to reduce dimensionality
+3. Tuning model hyperparmeters (GridSearchCV)
+4. Tuning with PCA
+
+## Random Forest Classifier scores
+![png](https://drive.google.com/uc?id=19fbOLUaqi63WsisQwYFUxR9JpldBaq9j)
+
+## K Nearest Neighbors Classifier scores
+![png](https://drive.google.com/uc?id=19kkmW460WupAjE8krRoSLEU8-5bjTRvF)
+
+---
+#Conclusion
+Based on the model scores, the Gridsearch CVRandom Forest Classifier without PCA shows the highest Accuracy, Precision, Recall and F1. 
+
+---
+#Limitations
