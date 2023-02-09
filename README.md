@@ -70,6 +70,7 @@ For each model a comparison of Accuracy, Precision, Recall, and F1 scores was co
 
 ---
 #Conclusion
+
 Based on the model scores, the Gridsearch CVRandom Forest Classifier without PCA shows the highest Accuracy, Precision, Recall and F1. 
 
 ---
