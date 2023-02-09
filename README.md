@@ -40,10 +40,19 @@ Through Exploratory visual analysis the following columns were deemed incomplete
 # Visualizations
 ## Heatmap
 Using a heatmap I determined which features had the strongest correlation to the target variable.
+
 ![png](https://drive.google.com/uc?id=19dnZ9T6yEh1O9Z5NWU8RiGgYQFrIJ3lk)
 
-##
+## Grades/Dropout rates
+The correlation between good grades and graduating is not understated in this data. While my initial thoughts were to look at socio-economic factors for predicting dropout rates, I was left with the simple fact that good students who get good grades have the strongest tendancy to graduate. This will be made obvious in the next graphics. These graphics show the distribution of student grades and their dropout rates. I observe:
 
+- Graduates shown in blue have a 1st semester mean grade of 13.1 with a tight distribuition bewtween 10 and 17. Outliers are to the high side. In the second semester the mean graduate grade is 13.14 with a tight distribution from 10 to 17.
+- Dropouts shown in orange have a 1st semester mean grade of 12.1 with a wide distribuition bewtween 0 and 12.5. There are a few outliers on high side. In the second semester the mean dropout grade is 12.07 with a wide distribution from 0 to 12.5.
+
+**NOTE** in these graphics I don not show the count of students with a zero score for their semester grade in the histogram plots on the left. The mean grade values for graduate and dropouts is calculated without the 0-values. In the box plots on the right of the image I include the 0-value grades. I do this to show how narrow the grade range is for graduates and how wide it goes for dropouts
+
+![png](https://drive.google.com/uc?id=1AIUredxVWf97g0HJOq3WQUcicvnpruEI)
+![png](https://drive.google.com/uc?id=1ANCjPLg0hQbLm1t2pFjYTCOTCW4IeAo3)
 
 ---
 # Classification models
